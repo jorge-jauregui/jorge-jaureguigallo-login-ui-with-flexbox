@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login UI with Flexbox - Jorge Jauregui Gallo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"> <!--Most authoritative stylesheet(s) placed last-->
+</head>    
+
+<body>
+    <div class="container">
+        <form class="login-form">
+            <h1>Login</h1>
+            <label for="username">Username</label>
+              <input type="text">
+            <label for="password">Password</label>
+              <input type="password" id="password-input">
+            <input type="checkbox" onClick="showPassword()">Show Password
+            <button type="button" class="btn btn-outline-info">Login</button> <!--Bootstrap button-->
+        </form>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>

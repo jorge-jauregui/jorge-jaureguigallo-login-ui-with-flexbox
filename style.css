@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); /* font import */
+
+body {
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
+}
+
+
+div.container {
+    display: flex;  
+    align-items: center; /* vertical center */
+    justify-content: center; /* horizontal center */
+    height: 100vh; /* 100vh seems to allow some scroll, so I reduced to 95vh */
+}
+
+form.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    background-color: #202020;
+    border-radius: 30px;
+
+    padding: 100px 50px 100px 50px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 40px;
+    background-color: #484848;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+    border:1px solid #4589ba ;
+    box-shadow: 0 0 5px #4589ba ;
+
+}
+
+input:focus[type=checkbox] { /* removing input:focus styles for the checkbox input */
+    border:none;
+    box-shadow: none;
+}
+
+
+/*
+RESPONSIVE SETTINGS
+*/
+
+@media max-height 500px {
+    
+}
