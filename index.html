@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,8 +16,11 @@
               <input type="text">
             <label for="password">Password</label>
               <input type="password" id="password-input">
-            <input type="checkbox" onClick="showPassword()">Show Password
-            <button type="button" class="btn btn-outline-info">Login</button> <!--Bootstrap button-->
+            <div class="checkbox">
+                <input type="checkbox" onClick="showPassword()">
+                <label for="checkbox">Show Password</label>
+            </div>
+            <button type="button" class="btn btn-outline-info mx-auto">Login</button> <!--Bootstrap button-->
         </form>
     </div>
   <script src="index.js"></script>
