@@ -6,11 +6,11 @@ body {
 
     background-image: url("background.jpg");
     background-size: cover; 
-    background-position: center;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
 }
-
-
-div.container {
+div.container-fluid {
     display: flex;  
     flex-wrap: wrap;
     align-items: center; /* vertical center */
@@ -22,17 +22,22 @@ form.login-form {
     display: flex;
     flex-direction: column;
     align-content: center; 
-    min-width: 400px;
+    justify-content: center;
+
+    min-width: 300px;
     min-height: 500px;
 
     background-color: #834f3c;
     border-radius: 30px;
 
-    padding: 100px 50px 100px 50px;
+    padding: 75px 50px 75px 50px;
 
     -webkit-box-shadow: -4px 4px 6px 0px rgba(89,51,38,1); /* box shadow */
     -moz-box-shadow: -4px 4px 6px 0px rgba(89,51,38,1);
     box-shadow: -4px 4px 6px 0px rgba(89,51,38,1);
+
+    margin-top: 40px; /* horizontal resize */
+    margin-bottom: 40px; /* horizontal resize */
 }
 
 h1 {
@@ -94,5 +99,3 @@ a {
 a:hover{
     color: gray;
 }
-
-
